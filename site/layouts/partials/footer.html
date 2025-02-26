@@ -1,50 +1,113 @@
-<footer class="bg-black ph3 pv4 white">
-
-	<div class="mw7 center pt3">
-
-		<div class="measure-narrow center mb4">
-
-			<img src="/img/logo.svg" alt="Kaldi logo" class="db w4 center mb4 br0">
-			<p class="f3 lh-title light-gray b tc mb2">{{ .Site.Data.footer.title }}</p>
-			<p>{{ .Site.Data.footer.blurb }}</p>
-
-			{{ partial "newsletter-form" . }}
-
-		</div>
-
-		<div class="flex-ns justify-between">
-
-			<div>
-				<h3 class="f4 b lh-title mb1 primary">Kaldi</h3>
-				<ul class="mb3">
-					<li><a href="/" class="link">Home</a></li>
-					<li><a href="/products" class="link">Our products</a></li>
-					<li><a href="/values" class="link">About</a></li>
-					<li><a href="/post" class="link">Blog</a></li>
-					<li><a href="/contact" class="link">Contact</a></li>
-				</ul>
+<footer id="footer">
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+								<div class="col col-lg-3 col-md-6">
+					<div class="footer_policy footer-menu">
+												<ul class="footer-menu__list">
+														<li class="footer-menu__item">
+								<a href="https://thanhtrungmobile.vn/page/chinh-sach-bao-mat-thong-tin.html" class="" rel="">Chính sách bảo mật</a>
+							</li>
+														<li class="footer-menu__item">
+								<a href="https://thanhtrungmobile.vn/page/chinh-sach-bao-hanh.html" class="" rel="">Chính sách bảo hành</a>
+							</li>
+														<li class="footer-menu__item">
+								<a href="https://thanhtrungmobile.vn/page/chinh-sach-kiem-hang.html" class="" rel="">Chính sách kiểm hàng</a>
+							</li>
+														<li class="footer-menu__item">
+								<a href="https://thanhtrungmobile.vn/page/chinh-sach-van-chuyen.html" class="" rel="">Chính sách vận chuyển</a>
+							</li>
+														<li class="footer-menu__item">
+								<a href="https://thanhtrungmobile.vn/page/huong-dan-thanh-toan.html" class="" rel="">Phương thức thanh toán</a>
+							</li>
+														<li class="footer-menu__item">
+								<a href="https://thanhtrungmobile.vn/page/dieu-khoan-su-dung.html" class="" rel="">Điều khoản sử dụng</a>
+							</li>
+														<li class="footer-menu__item">
+								<a href="https://thanhtrungmobile.vn/page/cau-hoi-thuong-gap.html" class="" rel="">Câu hỏi thường gặp</a>
+							</li>
+													</ul>
+											</div>
+				</div>
+				<div class="col col-lg-2 col-md-6">
+					<div class="footer_infor footer-menu">
+												<ul class="footer-menu__list">
+														<li class="footer-menu__item">
+								<a href="https://thanhtrungmobile.vn/page/gioi-thieu-ve-thanh-trung-mobile.html" class="" rel="">Giới thiệu</a>
+							</li>
+														<li class="footer-menu__item">
+								<a href="https://thanhtrungmobile.vn/lien-he.html" class="" rel="">Liên hệ</a>
+							</li>
+														<li class="footer-menu__item">
+								<a href="https://thanhtrungmobile.vn/page/gop-y-phan-anh.html" class="" rel="">Hỗ trợ khách hàng</a>
+							</li>
+														<li class="footer-menu__item">
+								<a href="https://thanhtrungmobile.vn/blog/tuyen-dung" class="" rel="">Tuyển dụng</a>
+							</li>
+														<li class="footer-menu__item">
+								<a href="https://thanhtrungmobile.vn/page/gio-mo-cua-lam-viec-tai-thanh-trung-mobile.html" class="" rel="">Giờ làm việc</a>
+							</li>
+														<li class="footer-menu__item">
+								<a href="https://thanhtrungmobile.vn/page/tac-gia.html" class="" rel="">Tác giả, Chuyên gia</a>
+							</li>
+														<li class="footer-menu__item">
+								<a href="https://thanhtrungmobile.vn/page/huong-dan-dat-lich-sua-chua.html" class="" rel="">Hướng dẫn đặt lịch sửa chữa</a>
+							</li>
+													</ul>
+											</div>
+				</div>
+				<div class="col col-lg-3 col-md-6">
+					<div class="footer-support">
+						<div class="footer-title"><span class="fw-600">Tổng đài hỗ trợ </span>(Miễn phí gọi)</div>
+						<div class="footer-support__item">Tư vấn: <a href="tel:0909.650.650" class="color-blue fw-600" rel="nofollow">0909.650.650</a> (08:30-20:00)</div>
+						<div class="footer-support__item">Bán hàng: <a href="tel:0909.650.650" class="color-blue fw-600" rel="nofollow">0909.650.650</a> (08:30-20:00)</div>
+						<div class="footer-support__item">Phản ánh: <a href="tel:09.6161.3131" class="color-blue fw-600" rel="nofollow">09.6161.3131</a> (08:30-20:00)</div>
+						<div class="footer-support__item"><a href="http://online.gov.vn/Home/WebDetails/19540" rel="nofollow">
+							<img loading="lazy" src="/assets/images/bocongthuong.jpg" alt="Logo Bộ Công Thương" width="150" height="40">
+							</a>
+						</div>
+						<div class="footer-social flex">
+							<a href="https://www.facebook.com/thanhtrungmobilevnn" target="_blank" rel="nofollow" class="social_item facebook color-blue">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="25" height="25">
+								<path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" fill="#4768ad"></path>
+							</svg>
+							Facebook</a>
+							<a href="https://www.youtube.com/channel/UCyIsxznCjd5sI5N3hZPekrA" target="_blank" rel="nofollow" class="social_item youtube color-blue">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="25" height="25"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" fill="#f90020"></path></svg>
+							Youtube</a>
+						</div>
+					</div>
+				</div>
+				<div class="col col-lg-4 col-md-6">
+					<div class="footer-systems">
+						<div class="footer-title fw-600">Hệ thống cửa hàng</div>
+						<ul class="footer-systems__list">
+																					<li class="footer-systems__item">
+								<a href="https://thanhtrungmobile.vn/page/24-tran-van-kieu-p10-quan-6-tphcm.html">24 Trần Văn Kiểu , P.10 , Quận 6 , TP.HCM</a>
+								
+							</li>
+														<li class="footer-systems__item">
+								<a href="https://thanhtrungmobile.vn/page/1401-duong-3-thang-2-quan-11-hcm.html">1401 đường 3 tháng 2 , P.16 , Quận 11 , TP.HCM (gần cầu vượt Cây Gõ)</a>
+								
+							</li>
+														<li class="footer-systems__item">
+								<a href="https://thanhtrungmobile.vn/page/122-nguyen-oanh-p07-quan-go-vap-tphcm.html">122 Nguyễn Oanh , P.07 , Quận Gò Vấp , TP.HCM (gần cầu vượt Nguyễn Kiệm)</a>
+								
+							</li>
+														<li class="footer-systems__item">
+								<a href="https://thanhtrungmobile.vn/page/cua-hang-sua-dien-thoai-quan-10-tphcm.html">277 Đường 3/2 , P.10 , Quận 10 , TP.HCM (Gần ngã tư Đường 3/2 và Lê Hồng Phong)</a>
+								
+							</li>
+														<li><a href="https://thanhtrungmobile.vn/danh-sach-cua-hang" class="color-blue">Tìm chi nhánh gần bạn (Xem thêm -1 chi nhánh) </a> </li>
+						</ul>
+					</div>
+				</div>
 			</div>
-
-			<div>
-				<h3 class="f4 b lh-title mb1 primary">Find out more</h3>
-				<ul class="mb3">
-					<li><a href="/post/jamaica-blue/" class="link">Latest offers</a></li>
-					<li><a href="/contact" class="link">Schedule an appointment</a></li>
-				</ul>
-			</div>
-
-			<div>
-				<h3 class="f4 b lh-title mb2 primary">Social media</h3>
-				<ul class="mhn2">
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook" "alt" "Kaldi on Facebook") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter" "alt" "Kaldi on Twitter") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-instagram" "alt" "Kaldi on Instagram") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-vimeo" "alt" "Kaldi on Vimeo") }}
-				</ul>
-			</div>
-
 		</div>
 	</div>
-
+	<div class="copyright text-center w-100">
+		<div class="container">
+			<div class="">© 2006 - 2024 - Hệ thống sửa chữa điện thoại di động Thành Trung Mobile. Giấy chứng nhận đăng ký kinh doanh số 0304670091 ngày 30/03/2011. Chịu trách nhiệm nội dung bởi Nguyễn Thành Trung. Designed by Sudo.</div>
+		</div>
+	</div>
 </footer>
-
