@@ -1,17 +1,15 @@
 <!doctype html>
-<html lang="{{ $.Site.Language.Lang }}">
-  {{ partial "head" . }}
-  <body class="sans-serif">
-
-    {{ block "header" . }}{{ partial "nav" . }}{{end}}
-
+<html lang="vi">
+<head>
+    {{ partial "head" . }}
+</head>
+<body class="sans-serif tt-mobile-theme">
+    
+    {{ block "header" . }}{{ partial "header-thanhtrung" . }}{{end}}
+    
     {{ block "main" . }}{{ end }}
-
-    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
-
-    {{ $script := .Site.Data.webpack.main }}
-    {{ with $script.js }}
-      <script src="{{ relURL . }}"></script>
-    {{ end }}
-  </body>
+    
+    {{ block "footer" . }}{{ partial "footer-thanhtrung" . }}{{end}}
+    
+</body>
 </html>
